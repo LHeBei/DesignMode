@@ -5,12 +5,22 @@ import com.heior.service.Playable;
 /**
  * @author heior
  */
-public class Epsoide implements Playable {
+public class Melodic implements Playable {
+    private String tittle;
+
+    public Melodic(String tittle) {
+        this.tittle = tittle;
+    }
     /**
      * playing object
      */
     @Override
     public void playing() {
-        
+        System.out.println("Now is playing Melodic! " + tittle);
+    }
+
+    public String getTittle() {
+        return tittle;
     }
 }
+
